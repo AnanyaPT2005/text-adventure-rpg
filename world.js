@@ -1,13 +1,13 @@
 const hospitalRoomIdle = {
   id: "hospital_idle",
-  background: "images/room_idle.png",
+  background: "images/hospitalroom_idle.png",
   objects: [
     new EnvironmentObject({
       id: "computer",
       name: "computer",
       image: "images/computer.png",
       x: 750,
-      y: 240,
+      y: 250,
       width: 256,
       height: 192,
       polygon: [
@@ -49,9 +49,9 @@ const hospitalRoomIdle = {
       name: "metal door",
       image: "images/metal_door.jpg",
       x: 400,
-      y: 150,
+      y: 170,
       width: 192,
-      height: 300,
+      height: 265,
       polygon: [
         { x: 400, y: 150 },
     { x: 592, y: 150 },
