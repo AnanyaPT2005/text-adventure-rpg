@@ -25,7 +25,7 @@ const hospitalRoomIdle = {
     new EnvironmentObject({
       id: "desk",
       name: "desk",
-      image: "images/desk.png",
+      image: "images/cabinet.png",
       x: 50,
       y: 200,
       width: 192,
@@ -68,7 +68,7 @@ const hospitalRoomIdle = {
 
 const hospitalDeskClose = {
   id: "hospital_desk",
-  background: "images/desk_close.png",
+  background: "images/cabinet_close.png",
   objects: [
     new EnvironmentObject({
       id: "drawer",
