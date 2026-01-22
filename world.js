@@ -76,7 +76,7 @@ const hospitalDeskClose = {
       image: "images/drawer.png",
       x: 180,
       y: 280,
-      width: 180,
+      width: 300,
       height: 80,
       polygon: [
         { x: 180, y: 280 },
