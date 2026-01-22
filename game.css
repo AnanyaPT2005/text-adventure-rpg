@@ -1,0 +1,132 @@
+/* BASE RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: monospace;
+  background: #f0f0f0;
+}
+
+/* APP WRAPPER */
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+/* MAIN AREA */
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+/* MAIN SCREEN */
+#main-screen {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid black;
+  height: 100%;
+}
+
+/* BOTTOM PANEL */
+#bottom-panel {
+  height: 200px;
+  display: flex;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+/* HIDDEN STATE */
+.hidden {
+  display: none;
+}
+
+/* IMAGE PANEL */
+#image-panel {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* TEXT PANEL */
+#text-panel {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid black;
+  overflow-y: auto;
+}
+
+/* SIDEBAR */
+#sidebar {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+/* STATS MENU */
+#stats-menu {
+  padding: 10px;
+  border: 2px solid black;
+}
+
+/* INVENTORY */
+#inventory {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid black;
+  overflow-y: auto;
+}
+
+#main-screen {
+  position: relative;
+  overflow: hidden;
+}
+
+#scene-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#object-layer {
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+}
+
+.env-object {
+  position: absolute;
+  pointer-events: none; /* IMPORTANT */
+}
+#debug-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+img:focus {
+  outline: none;
+}
+
+#hitmap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#hitmap polygon {
+  fill: rgba(0, 0, 255, 0.15); /* visible for now */
+  stroke: blue;
+  stroke-width: 2;
+  cursor: pointer;
+}

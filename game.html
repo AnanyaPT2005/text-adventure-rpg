@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Adventure</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- MAIN GAME AREA -->
+    <main id="main">
+
+      <div id="main-screen">
+  <img id="scene-bg" src="" alt="Scene background">
+
+  <svg id="hitmap" xmlns="http://www.w3.org/2000/svg"></svg>
+
+  <div id="object-layer"></div>
+</div>
+
+    </main>
+
+    <!-- SIDEBAR (RIGHT) -->
+    <aside id="sidebar">
+
+      <div id="stats-menu">
+        <h3>Stats</h3>
+        <p>HP: 100</p>
+
+        <h4>Abilities</h4>
+        <ul>
+          <li>Ability 1</li>
+        </ul>
+
+        <button>Menu</button>
+      </div>
+
+      <div id="inventory">
+        <h3>Inventory</h3>
+        <ul></ul>
+      </div>
+
+    </aside>
+
+  </div>
+  <script src="classes.js"></script>
+  <script src="world.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
